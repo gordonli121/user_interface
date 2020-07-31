@@ -16,6 +16,10 @@
   border-top: 1px solid gray;
 }
 
+textarea {
+  resize: none;
+}
+
 /********************************  NavBar  ********************************/
 .NavBar {
   background-color: var(--DarkBlue);
@@ -117,7 +121,7 @@
   padding-top: 10px;
 }
 
-/********************************  TweetElement  ********************************/
+/******************************  TweetElement  ******************************/
 .UserName {
   /* background-color: white; */
   margin-left: -15px;

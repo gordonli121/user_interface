@@ -1,14 +1,11 @@
-import React, { Component } from "react";
-import { Nav, Form, FormControl, Button, FormGroup } from "react-bootstrap";
+import React, { Component, useState } from "react";
+import { Form, Button } from "react-bootstrap";
 import { TweetElement } from "./TweetElement";
 
 export class Feed extends Component {
   render() {
     return (
-      // <React.Fragment>
       <div className="feed-div">
-        {/* <hr className="bg-secondary"></hr> */}
-
         <Form className="PostTweet">
           <Form.Group>
             <Form.Control
@@ -70,7 +67,6 @@ export class Feed extends Component {
           <hr className="h-divider"></hr>
         </div>
       </div>
-      // </React.Fragment>
     );
   }
 }

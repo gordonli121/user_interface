@@ -27,12 +27,14 @@ export class TweetElement extends Component {
                   <Dropdown.Toggle className="DropDownButt"></Dropdown.Toggle>
 
                   <Dropdown.Menu>
-                    <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+                    <Dropdown.Item href="#/action-1">
+                      Unfollow UserName
+                    </Dropdown.Item>
                     <Dropdown.Item href="#/action-2">
-                      Another action
+                      Mute UserName
                     </Dropdown.Item>
                     <Dropdown.Item href="#/action-3">
-                      Something else
+                      Message UserName
                     </Dropdown.Item>
                   </Dropdown.Menu>
                 </Dropdown>
