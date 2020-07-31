@@ -1,21 +1,23 @@
 import React, { Component } from "react";
-import { Nav, Button } from "react-bootstrap";
+import { Nav, Button, Container } from "react-bootstrap";
 
 export class Suggested extends Component {
   render() {
     return (
-      <Nav variant="pills" className="flex-column bg-primary">
-        <Button className="btn-warning btn-lg btn-block">Hey</Button>
-        <hr></hr>
-        <Button className="btn-warning btn-lg btn-block">Hey</Button>
-        <hr></hr>
-        <Button className="btn-warning btn-lg btn-block">Hey</Button>
-        <hr></hr>
-        <Button className="btn-warning btn-lg btn-block">Hey</Button>
-        <hr></hr>
-        <Button className="btn-warning btn-lg btn-block">Hey</Button>
-        <hr></hr>
+      // <Container fluid>
+      <Nav className="suggested flex-column">
+        <p className="suggestions">Do you know Tom?</p>
+        <hr className="h-divider"></hr>
+        <p className="suggestions">Do you know Tom?</p>
+        <hr className="h-divider"></hr>
+        <p className="suggestions">Do you know Tom?</p>
+        <hr className="h-divider"></hr>
+        <p className="suggestions">Do you know Tom?</p>
+        <hr className="h-divider"></hr>
+        <p className="suggestions">Do you know Tom?</p>
+        <hr className="h-divider"></hr>
       </Nav>
+      // </Container>
     );
   }
 }

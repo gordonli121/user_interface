@@ -36,10 +36,3 @@
     transform: rotate(360deg);
   }
 }
-
-.hello {
-  position: absolute;
-  background-color: aqua;
-  margin-left: 0;
-  margin-top: 220px;
-}
