@@ -47,22 +47,16 @@ textarea {
   /* border: 3px green solid; */
   font-weight: bold;
   font-size: 1.5em;
-  margin-left: 20px;
-  align-content: left;
   float: left;
-  vertical-align: middle;
-}
-
-.element-center {
-  margin-left: 50px;
-  width: 80%;
-  padding: 20px;
-}
-
-.text-left {
   margin-left: -15px;
   padding-left: 0;
   padding-right: 0;
+}
+
+.element-center {
+  margin-left: 3.5em;
+  width: 80%;
+  padding: 1.25em;
 }
 
 /********************************  NewFeeds  ********************************/
@@ -101,7 +95,7 @@ textarea {
 
 .feed-content {
   margin-bottom: 0.5em;
-  margin-right: 15px;
+  margin-right: 1em;
 }
 
 /********************************  Suggested  ********************************/

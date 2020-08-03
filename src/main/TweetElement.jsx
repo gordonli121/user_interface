@@ -5,6 +5,11 @@ import { FaRegComment } from "react-icons/fa";
 import { AiOutlineRetweet } from "react-icons/ai";
 
 export class TweetElement extends Component {
+  state = {
+    like: 0,
+    comment: 0,
+    repost: 0,
+  };
   render() {
     return (
       <Container fluid>
@@ -17,7 +22,7 @@ export class TweetElement extends Component {
               roundedCircle
             />
           </Col>
-          <Col className="col-10 ">
+          <Col className="col-10 bg-warnin">
             <Row>
               <Col className="col-11">
                 <Nav.Link className="UserName">Username</Nav.Link>
