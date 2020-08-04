@@ -8,6 +8,10 @@
   background-color: var(--DarkBlue) !important;
 }
 
+/* .nav-link:hover {
+  color: #0d662b;
+} */
+
 .h-divider {
   margin-top: 5px;
   margin-bottom: 5px;
@@ -18,6 +22,64 @@
 
 textarea {
   resize: none;
+}
+
+/********************************  LogInPage  ********************************/
+.LogInPage {
+  position: fixed;
+  background-image: url("https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  line-height: 100%;
+}
+
+.LogInForm {
+  width: 30%;
+  margin-left: 35%;
+}
+
+.Tab {
+  color: var(--TextColor);
+}
+
+.LogInButton {
+  height: 70px;
+  width: 350px;
+  font-size: 1.25em;
+  font-weight: bold;
+  border-radius: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.LogInRow {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+}
+
+.SignUpRow {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.modal-content {
+  border-radius: 1.25em;
+  width: 90%;
+}
+
+.ModalButton {
+  border-radius: 20px;
 }
 
 /********************************  NavBar  ********************************/
