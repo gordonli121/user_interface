@@ -5,7 +5,7 @@ export class NavBar extends Component {
   render() {
     return (
       <Navbar className="NavBar" variant="dark" fixed="top">
-        <Navbar.Brand href="#home">MySpace</Navbar.Brand>
+        <Navbar.Brand href="#home">MyZone</Navbar.Brand>
         <Form className="ml-auto" inline>
           <FormControl type="text" placeholder="Search" className="mr-sm-2" />
           <Button className="form-button">Search</Button>

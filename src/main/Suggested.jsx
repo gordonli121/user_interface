@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Nav, Button, Container } from "react-bootstrap";
+import { Nav } from "react-bootstrap";
 
 export class Suggested extends Component {
   render() {

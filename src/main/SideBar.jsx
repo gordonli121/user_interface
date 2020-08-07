@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import { Nav, Button, Badge, Row, Col, Container } from "react-bootstrap";
-import { Navbar, Form, FormControl } from "react-bootstrap";
+import { Nav, Badge, Navbar } from "react-bootstrap";
 import { GoHome, GoPerson, GoMail, GoBell, GoSignOut } from "react-icons/go";
 import { FaHashtag } from "react-icons/fa";
 

@@ -8,9 +8,9 @@ export class TweetElement extends Component {
   state = {
     userName: "Gordon",
     content:
-      "You need to import the picture into the React component. \
-      Say our image is in the same folder as our React component,\
-       your import would look something like this. import Logo from",
+      "You need to import the picture into the React component. " +
+      "Say our image is in the same folder as our React component," +
+      "your import would look something like this. import Logo from",
     like: 1,
     comment: 2,
     repost: 3,

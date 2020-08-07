@@ -34,16 +34,67 @@ textarea {
   line-height: 100%;
 }
 
-.LogInForm {
-  width: 30%;
-  margin-left: 35%;
-}
-
-.Tab {
+.LoginText {
   color: var(--TextColor);
 }
 
+.LogInForm {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -73%);
+  border: solid grey 1px;
+  border-radius: 10px;
+}
+
+.Logo {
+  margin: 15px;
+  text-align: center;
+  font-family: Cursive;
+  font-weight: bold;
+}
+
+.InputField {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 .LogInButton {
+  font-weight: bold;
+  font-size: 1.1em;
+  display: flex;
+  border-radius: 20px;
+  justify-content: center;
+  width: 100%;
+}
+
+.SignUpOption {
+  margin: 0;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -55%);
+  border: solid grey 1px;
+  border-radius: 10px;
+  height: 60px;
+}
+
+.LogInOption {
+  margin: 0;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+  border: solid grey 1px;
+  border-radius: 10px;
+  height: 60px;
+}
+
+/* .LogInButton {
   height: 70px;
   width: 350px;
   font-size: 1.25em;
@@ -55,9 +106,9 @@ textarea {
   margin: auto;
   margin-top: 20px;
   margin-bottom: 20px;
-}
+} */
 
-.LogInRow {
+/* .LogInRow {
   margin: 0;
   position: absolute;
   top: 50%;
@@ -71,16 +122,20 @@ textarea {
   top: 50%;
   left: 50%;
   transform: translate(-50%, 0);
-}
+} */
 
-.modal-content {
+/* .modal-content {
   border-radius: 1.25em;
   width: 90%;
 }
 
 .ModalButton {
   border-radius: 20px;
-}
+} */
+
+/* .Tab {
+  color: var(--TextColor);
+} */
 
 /********************************  NavBar  ********************************/
 .NavBar {
