@@ -17,7 +17,6 @@ export class NavBar extends Component {
           </Nav.Link>
           <Nav.Link href="#picture">
             <Image
-              className="float-right"
               style={{ width: 30, height: "auto" }}
               src="https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"
               roundedCircle

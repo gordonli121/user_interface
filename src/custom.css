@@ -137,6 +137,31 @@ textarea {
   color: var(--TextColor);
 } */
 
+/********************************  Profile Page  ********************************/
+.CoverContainer {
+  /* position: fixed; */
+  margin-left: 0px;
+  margin-top: -8px;
+  height: 300px;
+  width: 100%;
+}
+
+.CoverPhoto {
+  /* position: fixed; */
+  background-image: url("https://www.colorhexa.com/4f5b66.png");
+  background-size: cover;
+  width: 100%;
+  height: 220px;
+  line-height: 100%;
+}
+
+.ProfilePhoto {
+  position: absolute;
+  top: 140px;
+  left: 4%;
+  border: solid var(--DarkBlue) 4px;
+}
+
 /********************************  NavBar  ********************************/
 .NavBar {
   background-color: var(--DarkBlue);
