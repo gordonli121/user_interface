@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Navbar, Nav, Form, Button, FormControl, Image } from "react-bootstrap";
+import store from "../store";
 
 export class NavBar extends Component {
   render() {
@@ -11,7 +12,9 @@ export class NavBar extends Component {
           <Button className="form-button">Search</Button>
         </Form>
         <Nav className="ml-auto">
-          <Nav.Link href="#username">UserName</Nav.Link>
+          <Nav.Link href="#username">
+            {store.getState().userProfile.userName}
+          </Nav.Link>
           <Nav.Link href="#picture">
             <Image
               className="float-right"

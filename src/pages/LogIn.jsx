@@ -1,24 +1,57 @@
 import React, { Component } from "react";
 import { Nav, Form, Button, Row, Col, Container } from "react-bootstrap";
-// import { withRouter } from "react-router-dom";
-// import {reducer} from '../reducer'
+import store from "../store";
 
 export class LogIn extends Component {
-  state = {
-    showL: false,
-    showS: false,
-    myEmail: "",
-    myPassword: "",
-  };
+  constructor() {
+    super();
+    this.state = {
+      showL: false,
+      showS: false,
+      myEmail: "",
+      myPassword: "",
+    };
+    this.handleEmail = this.handleEmail.bind(this);
+    this.handlePassword = this.handlePassword.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+    this.handlePage = this.handlePage.bind(this);
+    this.routeChange = this.routeChange.bind(this);
+  }
 
   handlePage = () => {
-    return this.state.myEmail === "gordonli121@gmail.com" ? "/home" : "/login";
+    return this.state.myEmail === "gordonli121@gmail.com"
+      ? "/home"
+      : "/profile";
   };
 
   routeChange = () => {
-    // return this.state.myEmail === "gordonli121@gmail.com" ? "/home" : "/abc";
     let path = `${this.handlePage()}`;
+
+    // const axios = require("axios").default;
+    // let myurl = "http://localhost:9092/tweets";
+    // let reponse = axios
+    //   .get(myurl, {
+    //     crossDomain: true,
+    //   })
+    //   .then((res) => {
+    //     return res.data[0];
+    //   })
+    //   .catch((error) => {
+    //     return error;
+    //   });
+
+    store.dispatch({
+      type: "LogIn",
+      payload: {
+        userName: "Gordon",
+        userID: "gordo",
+        userPic: "http://google.ca",
+        JWTToken: "abcdefg",
+      },
+    });
+
     this.props.history.push(path);
+    console.log(store.getState());
   };
 
   handleSubmit = (event) => {

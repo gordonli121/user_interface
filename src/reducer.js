@@ -17,9 +17,9 @@ export default function reducer(
         isLoggedIn: true,
         userProfile: {
           ...state.userProfile,
-          userName: action.payload.userProfile.userName,
-          userID: action.payload.userProfile.userID,
-          userPic: action.payload.userProfile.userPic,
+          userName: action.payload.userName,
+          userID: action.payload.userID,
+          userPic: action.payload.userPic,
         },
         JWTToken: action.payload.JWTToken,
       };
@@ -28,7 +28,7 @@ export default function reducer(
         ...state,
         isLoggedIn: false,
         userProfile: {
-          ...this.userProfile,
+          ...state.userProfile,
           userName: "UserName",
           userID: "userID",
           userPic: "http://userpic",
