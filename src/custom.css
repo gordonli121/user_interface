@@ -139,7 +139,6 @@ textarea {
 
 /********************************  Profile Page  ********************************/
 .CoverContainer {
-  /* position: fixed; */
   margin-left: 0px;
   margin-top: -8px;
   height: 300px;
@@ -147,7 +146,6 @@ textarea {
 }
 
 .CoverPhoto {
-  /* position: fixed; */
   background-image: url("https://www.colorhexa.com/4f5b66.png");
   background-size: cover;
   width: 100%;
@@ -160,6 +158,37 @@ textarea {
   top: 140px;
   left: 4%;
   border: solid var(--DarkBlue) 4px;
+}
+
+/********************************  ChatRoom  ********************************/
+.ChatRoom {
+  position: fixed;
+  background-color: var(--DarkBlue);
+  left: 25%;
+  width: 55%;
+  height: 100%;
+  color: var(--TextColor);
+}
+
+.Dialogue {
+  height: 67%;
+}
+
+.Typing {
+  height: 33%;
+}
+
+/********************************  FriendList  ********************************/
+.FriendList {
+  position: fixed;
+  background-color: var(--DarkBlue);
+  border-left: 1px solid;
+  border-color: var(--BorderColor);
+  left: 80%;
+  width: 20%;
+  height: 100%;
+  color: var(--TextColor);
+  padding-top: 15px;
 }
 
 /********************************  NavBar  ********************************/
