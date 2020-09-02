@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Nav, Form, Button, Row, Col, Container } from "react-bootstrap";
-import store from "../store";
 
 export class LogIn extends Component {
   constructor() {
@@ -40,7 +39,7 @@ export class LogIn extends Component {
     //     return error;
     //   });
 
-    store.dispatch({
+    this.props.dispatch({
       type: "LogIn",
       payload: {
         userName: "Gordon",
@@ -51,7 +50,7 @@ export class LogIn extends Component {
     });
 
     this.props.history.push(path);
-    console.log(store.getState());
+    // console.log(store.getState());
   };
 
   handleSubmit = (event) => {

@@ -16,11 +16,20 @@ export class SignUp extends Component {
                 <Form.Label className="LoginText">
                   Please input your info below
                 </Form.Label>
-                <Form.Control className="mt-2" placeholder="Enter email" />
+                <Form.Control
+                  type="email"
+                  className="mt-2"
+                  placeholder="Enter email"
+                />
                 <Form.Control className="mt-2" placeholder="Enter name" />
                 <Form.Control className="mt-2" placeholder="Enter username" />
-                <Form.Control className="mt-2" placeholder="Enter password" />
                 <Form.Control
+                  type="password"
+                  className="mt-2"
+                  placeholder="Enter password"
+                />
+                <Form.Control
+                  type="password"
                   className="mt-2"
                   placeholder="Re-Enter password"
                 />

@@ -4,6 +4,7 @@ import NavBar from "../main/NavBar";
 import SideBar from "../main/SideBar";
 import Suggested from "../main/Suggested";
 import ProfileInfo from "../main/ProfileInfo";
+import CNavbar from "../containers/CNavbar";
 
 export class Profile extends Component {
   render() {
@@ -11,7 +12,7 @@ export class Profile extends Component {
       <Container fluid>
         <Row bg="info">
           <Col>
-            <NavBar />
+            <CNavbar />
           </Col>
         </Row>
         <Row>

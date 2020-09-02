@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Nav, Badge, Navbar } from "react-bootstrap";
 import { GoHome, GoPerson, GoBell, GoSignOut } from "react-icons/go";
 import { FaHashtag } from "react-icons/fa";
-import store from "../store";
+// import store from "../redux/store";
 
 export class SideBar extends Component {
   constructor() {
@@ -10,10 +10,10 @@ export class SideBar extends Component {
     this.handleLogout = this.handleLogout.bind(this);
   }
   handleLogout = () => {
-    store.dispatch({
+    this.props.dispatch({
       type: "LogOut",
     });
-    console.log(store.getState());
+    // console.log(store.getState());
   };
   render() {
     return (

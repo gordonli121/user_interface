@@ -4,6 +4,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import NavBar from "../main/NavBar";
 import SideBar from "../main/SideBar";
 import Suggested from "../main/Suggested";
+import CNavbar from "../containers/CNavbar";
 
 export class Home extends Component {
   render() {
@@ -11,7 +12,7 @@ export class Home extends Component {
       <Container fluid>
         <Row bg="info">
           <Col>
-            <NavBar />
+            <CNavbar />
           </Col>
         </Row>
         <Row>

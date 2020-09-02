@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Navbar, Nav, Form, Button, FormControl, Image } from "react-bootstrap";
-import store from "../store";
+// import store from "../redux/store";
 
 export class NavBar extends Component {
   render() {
@@ -12,9 +12,7 @@ export class NavBar extends Component {
           <Button className="form-button">Search</Button>
         </Form>
         <Nav className="ml-auto">
-          <Nav.Link href="/profile">
-            {store.getState().userProfile.userName}
-          </Nav.Link>
+          <Nav.Link href="/profile">{this.props.userProfile.userName}</Nav.Link>
           <Nav.Link href="/profile">
             <Image
               style={{ width: 30, height: "auto" }}
