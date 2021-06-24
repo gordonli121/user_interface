@@ -75,7 +75,7 @@ export class TweetElement extends Component {
           <Col className="col-10 bg-warnin">
             <Row>
               <Col className="col-11">
-                <Nav.Link className="UserName">{this.state.userName}</Nav.Link>
+                <Nav.Link className="UserName">Gordon Li</Nav.Link>
               </Col>
               <Col className="col-1 ">
                 <Dropdown>
@@ -83,13 +83,13 @@ export class TweetElement extends Component {
 
                   <Dropdown.Menu>
                     <Dropdown.Item href="#/action-1">
-                      Unfollow {this.state.userName}
+                      Unfollow Gordon Li
                     </Dropdown.Item>
                     <Dropdown.Item href="#/action-2">
-                      Mute {this.state.userName}
+                      Mute Gordon Li
                     </Dropdown.Item>
                     <Dropdown.Item href="#/action-3">
-                      Message {this.state.userName}
+                      Message Gordon Li
                     </Dropdown.Item>
                   </Dropdown.Menu>
                 </Dropdown>

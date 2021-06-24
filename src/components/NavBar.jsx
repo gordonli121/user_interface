@@ -12,7 +12,7 @@ export class NavBar extends Component {
           <Button className="form-button">Search</Button>
         </Form>
         <Nav className="ml-auto">
-          <Nav.Link href="/profile">{this.props.userProfile.userName}</Nav.Link>
+          <Nav.Link href="/profile">Gordon Li</Nav.Link>
           <Nav.Link href="/profile">
             <Image
               style={{ width: 30, height: "auto" }}
